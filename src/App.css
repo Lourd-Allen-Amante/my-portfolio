@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: transparent;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+.navbar-scrolled {
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-h);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.theme-switch-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text);
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.theme-switch-btn:hover {
+  background-color: var(--accent-bg);
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+.theme-icon {
+  width: 32px;
+  height: 32px;
+}
+
