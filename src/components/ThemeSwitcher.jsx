@@ -5,7 +5,6 @@ import darkIcon from "../assets/Dark.svg";
 const ThemeSwitcher = ({ theme, toggleTheme }) => {
   return (
     <button
-      id="theme-switch"
       className="theme-switch-btn"
       onClick={toggleTheme}
       aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}

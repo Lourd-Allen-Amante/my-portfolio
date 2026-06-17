@@ -42,12 +42,11 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? "navbar-scrolled" : ""}`}>
-      <div className="navbar-brand">
+      <div>
         <img
           src={theme === "dark" ? logoWhite : logoDark}
           alt="Lourd Allen Logo"
-          className="navbar-logo-img"
-          style={{ height: "60px", transition: "all 0.3s ease" }}
+          className="navbar-img"
         />
       </div>
       <div className="navbar-right">
