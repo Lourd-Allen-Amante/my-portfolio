@@ -109,6 +109,14 @@
   gap: 20px;
 }
 
+.lightmode .heroMid-Intro {
+  color: #e99c05;
+}
+
+.lightmode .heroMid .highlight {
+  color: #e99c05;
+}
+
 .heroMid {
   display: flex;
   align-items: center;
@@ -117,7 +125,7 @@
   min-height: 100vh;
   margin: auto;
   gap: 40px;
-  padding: 60px 60px 80px 60px;
+  padding: 15px 15px 13px 10px;
 }
 .heroMid-left {
   z-index: 10;
@@ -129,16 +137,57 @@
   font-family: var(--neuton);
   color: #bf9b30;
   padding: 0;
+  margin-bottom: 16px;
 }
 .heroMid-desc {
-  max-width: 520px;
-  font-size: 15px;
+  max-width: 600px;
+  font-size: 16px;
   text-align: justify;
   margin-right: 0;
-  margin-top: 40px;
+  margin-top: 22px;
+  color: #d1d5db;
 }
+
+.lightmode .heroMid-desc {
+  color: #08060d;
+}
+
 .heroMid .highlight {
+  display: inline-block;
+  max-width: 700px;
   color: #a67c00;
+}
+
+.btn-subPrimary {
+  background-color: #c9a22720;
+  color: #a67c00;
+  border-radius: 16px;
+  padding: 10px 19px 8px 19px;
+  margin-right: 10px;
+  border-color: #c9a22750;
+  border-width: thin;
+  font-family: var(--mono);
+}
+
+.lightmode .btn-subPrimary {
+  color: #4b3f12;
+  border-color: #B59410;
+}
+
+.btn-sub {
+  color: #a67c00;
+  background-color: #c9a22720;
+  border-radius: 16px;
+  padding: 10px 19px 8px 19px;
+  margin: 10px;
+  border-color: #c9a22750;
+  border-width: thin;
+  font-family: var(--mono);
+}
+
+.lightmode .btn-sub {
+  color: #4b3f12;
+  border-color: #B59410;
 }
 
 .heroMid-right {
@@ -148,8 +197,63 @@
 .heroMid-right img {
   position: absolute;
   right: auto;
-  margin-left: -150px;
-  transform: translateY(-50%);
-  width: 600px;
-  height: 600px;
+  margin-left: -40px;
+  transform: translateY(-52%);
+  width: 550px;
+  height: 550px;
+}
+
+.btnRow {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 34px;
+}
+
+.btn-primary {
+  font-weight: 1000;
+  padding: 18px 30px;
+  color: #f7f3e6;
+  background: #bf9b30;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  border-radius: 16px;
+}
+
+.btn-primary:hover {
+  background: #a67c00;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  font-weight: 700;
+  padding: 18px 30px;
+  color: #f7f3e6;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: inset;
+  border-radius: 16px;
+  border-width: thin;
+}
+
+.btn-secondary:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+  color: #000000;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.lightmode .btn-secondary {
+  color: #000000;
+  background-color: transparent;
+  border-color: #000000;
+}
+
+.lightmode .btn-secondary:hover {
+  background: #000000;
+  color: #ffffff;
 }
