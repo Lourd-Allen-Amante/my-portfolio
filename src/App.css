@@ -51,14 +51,11 @@
   text-decoration: none;
   color: var(--text);
   font-size: 0.95rem;
-  transition: color 0.2s ease;
+  position: relative;
 }
 
-.navbar-links a {
-  text-decoration: none;
-  color: var(--text);
-  font-size: 0.95rem;
-  position: relative;
+.lightmode .navbar-links a {
+  color: var(--text-h);
 }
 
 .navbar-links a::after {
@@ -75,6 +72,10 @@
 .navbar-links a:hover {
   color: var(--text-hover);
   font-weight: 600;
+}
+
+.lightmode .navbar-links a:hover {
+  color: #a67c00;
 }
 
 .navbar-links a:hover::after {
@@ -171,7 +172,7 @@
 
 .lightmode .btn-subPrimary {
   color: #4b3f12;
-  border-color: #B59410;
+  border-color: #b59410;
 }
 
 .btn-sub {
@@ -187,7 +188,7 @@
 
 .lightmode .btn-sub {
   color: #4b3f12;
-  border-color: #B59410;
+  border-color: #b59410;
 }
 
 .heroMid-right {
@@ -211,7 +212,7 @@
 }
 
 .btn-primary {
-  font-weight: 1000;
+  font-weight: 700;
   padding: 18px 30px;
   color: #f7f3e6;
   background: #bf9b30;
@@ -256,4 +257,49 @@
 .lightmode .btn-secondary:hover {
   background: #000000;
   color: #ffffff;
+}
+
+.aboutContainer {
+  margin: 0 auto;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 15px 20px;
+  align-items: start;
+  gap: 40px;
+}
+
+.about-desc {
+  max-width: 100%;
+  line-height: 1.7;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.aboutText {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.aboutText h2 {
+  margin-bottom: 1px;
+}
+
+.aboutBoxes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.boxContainer {
+  background-color: transparent;
+  border: 2px solid #bf9b30;
+  border-radius: 5px;
+  padding: 15px;
+  height: 140px;
+  min-width: 240px;
+  margin: 16px;
+  
 }
